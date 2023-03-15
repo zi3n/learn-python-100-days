@@ -6,7 +6,9 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
-bill = float(input("How much is the bill?: "))
+bill = float(input("What was the total bill? $"))
+tip = float(input("What percentage tip would you like to give? 10, 12 or 15? ")) / 100
+people = int(input("How many people to split the bill? "))
 
-person_pay = (bill / 5) * 1.12
+person_pay = (bill / 5) * (1 + tip)
 print(round(person_pay,2))
